@@ -1,0 +1,17 @@
+<?php
+	if(isset($_GET["logout"])){
+     	session_start();
+     	if($_GET["logout"]=="user"){
+     		unset($_SESSION["user"]);
+     		unset($_SESSION["user_email"]);
+     		$_SESSION["success"]="userLogout";
+            header("location:index.php");            
+        }
+        if($_GET["logout"]=="admin"){
+            unset($_SESSION["admin"]);
+            unset($_SESSION["admin_email"]);  
+            $_SESSION["success"]="adminLogout";
+            header("location:index.php");         
+        }
+    }  
+?>
