@@ -28,4 +28,4 @@ I developed this project under tight deadlines while managing multiple responsib
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/garments-shop.git
+   git clone https://github.com/zainashrafofficial/Garments-Shop---PHP
